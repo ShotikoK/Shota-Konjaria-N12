@@ -149,6 +149,7 @@ body {
     background-color: #FFFFFF;
     border-top: 4px solid #44D3D2;
     position: relative;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
 }
 
 img {
@@ -169,7 +170,7 @@ img {
     border-top: 4px solid #EA5454;
     position: relative;
     margin-bottom: 30px;
-
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
 
 }
 
@@ -180,6 +181,7 @@ img {
     background-color: #FFFFFF;
     border-top: 4px solid #FCAE4A;
     position: relative;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
 }
 
 /* მარჯვენა მხარე */
@@ -191,7 +193,7 @@ img {
     background-color: #FFFFFF;
     border-top: 4px solid #549EF2;
     position: relative;
-
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
 }
 
 
@@ -199,32 +201,62 @@ img {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container {
         padding: 20px;
     }
+
     .top {
         padding-top: 40px;
         text-align: center;
     }
+
+    .text1, .text2 {
+        font-size: 28px; 
+    }
+
+    .text3 {
+        font-size: 14px;
+        padding: 0 10px; 
+    }
+
     .bottom {
         flex-direction: column;
         align-items: center;
         gap: 20px;
         padding-top: 40px;
     }
+
     .left, .middle, .right {
         width: 100%;
-        max-width: 350px; 
+        max-width: 350px;
     }
+
     .left img, .middle img, .right img {
         position: static;
         display: block;
-        margin: 20px auto 0 auto;
+        margin: 20px auto 0;
     }
+
     .insidetext1, .insidetext2, .insidetext3, .insidetext4, 
     .insidetext5, .insidetext6, .insidetext7, .insidetext8 {
         padding-left: 0;
         text-align: center;
     }
 }
+
+@media (max-width: 600px) {
+    .text1, .text2 {
+        font-size: 24px;
+    }
+
+    .text3 {
+        font-size: 12px;
+    }
+
+    .left, .middle, .right {
+        padding: 15px;
+    }
+}
+
+
